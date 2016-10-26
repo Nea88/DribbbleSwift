@@ -743,7 +743,7 @@ open class CommentDS: ArrayProtocol{
     
     public required init(json: JSON){
         id = json["id"].int
-        body = json["body_text"].string
+        body = json["body"].string
         likes_count = json["likes_count"].int
         likes_url = json["likes_url"].string
         created_at = json["created_at"].string
